@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYANGA LODGES</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the hotel -->
+        <div class="logo">NYANGA LODGE</div>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#history">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#rooms"><i class="fas fa-bed"></i> Rooms</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <!-- Hero section with welcome message -->
+        <section id="home" class="hero">
+            <h1>Welcome to Our Lodge</h1>
+            <p>Experience luxury and comfort in the heart of the city.</p>
+            <!-- New subsection for lodges history -->
+            <div id="lodges-history" class="lodges-history">
+                <h2>Our Lodges' History</h2>
+                <p>Our lodges have a rich history that dates back to its founding by Yusuf Suleiman Nyanga.
+                     It all started in Arusha, where Yusuf's vision and dedication laid the foundation for what 
+                     has become a cherished establishment.</p>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Welcome to our Lodge, a place where tradition meets modern luxury. Established in Arusha, we have been offering exceptional hospitality since our inception. Our commitment to excellence is reflected in every detail, from our elegantly designed rooms to our personalized services.</p>
+            <div class="about-content">
+                <div class="about-history">
+                    <h3>Our History</h3>
+                    <p>Founded by Yusuf Suleiman Nyanga, our hotel began as a small lodge in the heart of Arusha. Over the years, we have expanded and evolved, yet our dedication to providing outstanding guest experiences remains unchanged. Discover more about our journey and how we’ve grown into a beloved destination for travelers from around the world.</p>
+                </div>
+                <div class="about-team">
+                    <h3>Our Team</h3>
+                    <p>Meet the passionate individuals behind our hotel. Our team consists of dedicated professionals who are committed to making your stay memorable. From our front desk staff to our housekeeping team, everyone plays a crucial role in ensuring you have a pleasant and comfortable experience.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="rooms" class="rooms">
+            <h2>Our Rooms</h2>
+            <!-- Deluxe Room -->
+            <div class="room">
+                <div class="room-image">
+                    <img src="img/img1.jpg" alt="Deluxe Room">
+                </div>
+                <div class="room-description">
+                    <h3>Deluxe Room</h3>
+                    <p>Description of the deluxe room. Enjoy luxury and comfort with a range of high-end amenities.</p>
+                </div>
+            </div>
+            <!-- Suite -->
+            <div class="room">
+                <div class="room-image">
+                    <img src="img/img2.jpg" alt="Suite">
+                </div>
+                <div class="room-description">
+                    <h3>Suite</h3>
+                    <p>Description of the suite. Experience top-tier elegance with extra space and premium features.</p>
+                </div>
+            </div>
+            <!-- Standard Room -->
+            <div class="room">
+                <div class="room-image">
+                    <img src="img/img3.jpg" alt="Standard Room">
+                </div>
+                <div class="room-description">
+                    <h3>Standard Room</h3>
+                    <p>Description of the standard room. Comfortable and cozy with all the essential amenities.</p>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <i class="fas fa-swimming-pool"></i>
+                <div class="service-description">
+                    <h3>Pool Services</h3>
+                    <p>Relax and enjoy our outdoor swimming pool with poolside service.</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fas fa-wifi"></i>
+                <div class="service-description">
+                    <h3>Room WiFi</h3>
+                    <p>Stay connected with high-speed WiFi available in all rooms and public areas.</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fas fa-car"></i>
+                <div class="service-description">
+                    <h3>Car Parking Space</h3>
+                    <p>Convenient and secure parking space available for all guests.</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fas fa-basketball-ball"></i>
+                <div class="service-description">
+                    <h3>Basketball Court</h3>
+                    <p>Enjoy a game of basketball on our well-maintained court.</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fas fa-utensils"></i>
+                <div class="service-description">
+                    <h3>Restaurant</h3>
+                    <p>Indulge in a variety of delicious meals at our on-site restaurant.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="signin">
+            <h2>Sign In</h2>
+            <form action="signin_process.php" method="post" class="signin-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+
+
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Reach out to us through the form below or use the contact details provided. Our team is here to assist you.</p>
+                <form action="submit_form.php" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> Phone: +123-456-7890</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@hotelname.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Hotel Street, City, Country</p>
+                </div>
+                <div class="map">
+                    <h3>Find Us</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.8174607010085!2d36.68687631551003!3d-3.3861656974624356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183dc76823e2a68b%3A0x1c5b7e8b6f5e7d37!2sArusha%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1697601140467" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://facebook.com/HotelName" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/HotelName" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/HotelName" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </section>
+            
+        
+
+
+
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 NYANGA HOTELS. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
